@@ -1,15 +1,43 @@
+:root {
+  --box-shadow: 0 0px 20px rgb(216, 215, 215);
+  --header-box-shadow: 0 5px 20px rgb(216, 215, 215);
+  --footer-box-shadow: 0 -5px 20px rgb(216, 215, 215);
+  --primary-color: rgb(0, 0, 255);
+  --secondary-color: rgb(0, 0, 0);
+  --third-color: rgb(228, 226, 226);
+  --forth-color: rgb(255, 255, 255);
+  --success-color: rgb(238, 255, 238);
+  --danger-color: rgb(255, 240, 240);
+}
+
 * {
-  font-family: "Comic Relief", system-ui;
-  font-weight: 400;
-  font-style: normal;
+  font-family: inherit;
+  font-weight: inherit;
+  font-style: inherit;
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Comic Relief", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  text-align: center;
+}
+
+a {
+  color: var(--primary-color);
 }
 
 header nav {
   padding: 20px;
-  box-shadow: 0 5px 20px rgb(216, 215, 215);
+  box-shadow: var(--header-box-shadow);
+  position: fixed;
+  width: 100%;
+  background-color: var(--forth-color);
+  top: 0;
 }
 
 header > nav > li {
@@ -18,14 +46,14 @@ header > nav > li {
 header > nav > li > a {
   padding: 10px;
   text-decoration: none;
-  color: black;
+  color: var(--secondary-color);
 }
 header > nav > li > a:hover {
-  border-bottom: 2px solid blue;
+  border-bottom: 2px solid var(--primary-color);
 }
 
 .card {
-    margin: 20px;
+  margin: 80px 20px 20px 20px;
 }
 
 .card > img {
@@ -33,66 +61,240 @@ header > nav > li > a:hover {
   margin: auto;
   width: auto;
   height: 150px;
-  border: 1px solid rgb(228, 226, 226);
+  border: 1px solid var(--third-color);
   border-radius: 50%;
-  box-shadow: 0px -10px 20px 0px rgb(228, 226, 226);
+  box-shadow: var(--footer-box-shadow);
 }
 
-.card h2 {
+h2 {
   text-align: center;
   margin: 10px;
 }
 
 section.bio {
+  margin: 20px 20%;
+  text-align: center;
+  line-height: 2;
+}
+
+.material-symbols-outlined {
+  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
+}
+
+.download {
+  display: inline-flex;
+  align-items: center;
+  background-color: var(--primary-color);
+  color: var(--forth-color);
+  padding: 10px 20px;
+  border-radius: 20px;
+  box-shadow: var(--box-shadow);
+  text-decoration: none;
+}
+
+.download:hover {
+  background-color: var(--forth-color);
+  color: var(--primary-color);
+  outline: 1px solid var(--primary-color);
+}
+
+hr {
   margin: 20px;
+}
+
+section.skills {
   text-align: center;
 }
 
-hr{
-    margin: 20px;
+section.skills > ul > li {
+  border: 1px solid var(--third-color);
+  border-radius: 15px;
+  padding: 10px;
+  margin: 10px;
+  display: inline-block;
 }
 
-section.skills{
-    text-align: center;
-}
-
-section.skills > ul > li{
-    border: 1px solid gray;
-    border-radius: 15px;
-    padding: 10px;
-    margin: 10px;
-    display: inline-block;
-}
-
-section.portfolio{
-    text-align: center;
-    margin: 20px;
-}
-
-section.portfolio h2{
-    margin: 20px;
-}
-
-section.portfolio ul li{
-    list-style: none;
-    padding: 10px;
-    margin: 10px;
-}
-
-section.portfolio img{
-    display: inline-block;
-    width: auto;
-    height: 150px;
-    border-radius: 15px;
-}
-figcaption{
-    text-decoration: none;
-    color: black;
-}
-
-
-footer{
-    padding: 20px;
-  box-shadow: 0 -5px 20px rgb(216, 215, 215);
+section.portfolio {
   text-align: center;
+  margin: 20px;
+}
+
+section.portfolio h2 {
+  margin: 20px;
+}
+
+section.portfolio ul {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+section.portfolio ul li {
+  list-style: none;
+  padding: 10px;
+  margin: 10px;
+}
+
+section.portfolio img {
+  display: inline-block;
+  width: auto;
+  height: 150px;
+  border-radius: 15px;
+}
+figcaption {
+  text-decoration: none;
+  color: var(--secondary-color);
+}
+
+.certificates,
+.testimonials {
+  padding: 20px;
+}
+
+.certificates li {
+  line-height: 25px;
+  display: block;
+}
+
+.testimonials {
+  margin: 20px;
+  padding: 40px 0;
+}
+
+.testimonials h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: var(--heading-color);
+}
+
+.testimonials .items {
+  display: flex;
+  overflow-x: auto;
+  gap: 20px;
+  padding: 20px 10px;
+  scrollbar-width: thin; /* For Firefox */
+  scrollbar-color: var(--primary-color) #f1f1f1;
+  -webkit-overflow-scrolling: touch; /* Smooth scrolling on iOS */
+}
+
+/* For Chrome/Safari scrollbar styling */
+.testimonials .items::-webkit-scrollbar {
+  height: 8px;
+}
+
+.testimonials .items::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+
+.testimonials .items::-webkit-scrollbar-thumb {
+  background-color: var(--primary-color);
+  border-radius: 10px;
+}
+
+.testimonials li {
+  list-style: none;
+  min-width: 400px;
+  padding: 25px;
+  background: white;
+  border-radius: 15px;
+  box-shadow: var(--box-shadow);
+  border: 1px solid var(--primary-color);
+}
+
+.testimonials blockquote {
+  margin: 0;
+  font-style: italic;
+  line-height: 1.6;
+}
+
+.contact {
+  padding: 20px;
+  max-width: 600px;
+  width: 90%;
+  display: inline-block;
+}
+
+.field {
+  position: relative;
+  display: block;
+}
+
+.field img {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  left: -25px;
+  top: 15px;
+}
+
+.input {
+  padding: 10px;
+  outline: none;
+  border-radius: 20px;
+  box-shadow: var(--box-shadow);
+  border: 0;
+  margin: 5px;
+  width: 100%;
+}
+
+textarea {
+  resize: none;
+}
+
+input:valid {
+  background-color: var(--success-color);
+}
+input:invalid {
+  background-color: var(--danger-color);
+}
+
+.submit {
+  padding: 10px 20px;
+  margin: 10px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background-color: var(--primary-color);
+  color: var(--forth-color);
+  border-radius: 20px;
+}
+
+.submit:hover {
+  background-color: var(--forth-color);
+  color: var(--primary-color);
+  outline: 1px solid var(--primary-color);
+}
+
+footer {
+  padding: 20px;
+  box-shadow: var(--footer-box-shadow);
+  text-align: center;
+}
+
+
+#back-to-top{
+  display: none;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  background-color: var(--primary-color);
+  color: var(--forth-color);
+  padding: 15px 15px 10px 15px;
+  margin: 30px;
+  border-radius: 50%;
+  border: none;
+  box-shadow: var(--box-shadow);
+  z-index: 1000;
+}
+
+#back-to-top.show{
+  display: block;
+}
+
+#back-to-top:hover{
+  cursor: pointer;
+  color: var(--primary-color);
+  background-color: var(--forth-color);
+  outline: 1px solid var(--primary-color);
 }

@@ -8,19 +8,23 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Comic+Relief:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
     <title>Ayman - Portfolio</title>
 </head>
 
 <body>
     <header>
         <nav>
-            <li><a href="">Bio</a></li>
-            <li><a href="">Skills</a></li>
-            <li><a href="">Portfolio</a></li>
-            <li><a href="">Contact</a></li>
+            <li><a href="#bio">Bio</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#certs">Certificates</a></li>
+            <li><a href="#contact-us">Contact</a></li>
         </nav>
 
-        <div class="card">
+        <div class="card" id="bio">
             <img src="./images/ayman-logo.jpg" alt="ayman">
             <h2>Ayman Fahd Naji Ali</h2>
             <section class="bio">
@@ -28,12 +32,16 @@
                     I can
                     help with problem solving.</p>
             </section>
-
+            <a class="download" href="assets/AYMAN_F_ALI_CV_Software_Engineer.pdf">
+                <span class="material-symbols-outlined">
+                    download </span>
+                <span>Download My CV</span>
+            </a>
         </div>
     </header>
     <hr>
     <main>
-        <section class="skills">
+        <section class="skills" id="skills">
             <h2>Skills</h2>
             <ul>
                 <li>Laravel</li>
@@ -42,7 +50,7 @@
             </ul>
         </section>
         <hr>
-        <section class="portfolio">
+        <section class="portfolio" id="portfolio">
             <h2>Portfolio</h2>
             <ul>
                 <li>
@@ -53,14 +61,78 @@
                                 Ayman's Portfolio
                             </figcaption>
                         </figure>
-                         </a>
+                    </a>
                 </li>
             </ul>
         </section>
+        <hr>
+        <section class="certificates" id="certs">
+            <h2>My Certificates</h2>
+            <ul>
+                <li><a href="https://learn.re-coded.com/certificates/hukweijgzk">Intro to Frontend Web Development</a>
+                </li>
+            </ul>
+        </section>
+        <hr>
+        <section class="testimonials">
+            <h2>Testimonials</h2>
+            <ul class="items">
+                <li>
+                    <blockquote>
+                        Thank you for your help, the projects I make become better and better after your advice.
+                    </blockquote>
+                </li>
+                <li>
+                    <blockquote>
+                        Don't Give Up, Every simple step leads to big target.
+                    </blockquote>
+                </li>
+                <li>
+                    <blockquote>
+                        learning by doing is the best thing I get from this bootcamp.
+                    </blockquote>
+                </li>
+                <li>
+                    <blockquote>
+                        Software Engineering tought me how to organize my life.
+                    </blockquote>
+                </li>
+            </ul>
+        </section>
+        <hr>
+        <section class="contact" id="contact-us">
+            <h2>Contact Us</h2>
+            <form class="form" action="" method="post">
+                <div class="field">
+                    <img src="images/user-solid.svg" alt="name">
+                    <input class="input" type="text" name="name" id="name" placeholder="Your Name" required>
+                </div>
+                <div class="field">
+                    <img src="images/envelope-solid.svg" alt="email">
+                    <input class="input" type="email" name="email" id="email" placeholder="Your email" required>
+                </div>
+                <div class="field">
+                    <img src="images/comment-regular.svg" alt="subject">
+                    <input class="input" type="text" name="subject" id="subject" placeholder="Your subject" required>
+                </div>
+                <div class="field">
+                    <img src="images/message-solid.svg" alt="message">
+                    <textarea rows="5" class="input" name="message" id="message" placeholder="Your message"
+                        required></textarea>
+                </div>
+                <button type="submit" class="submit">Send</button>
+            </form>
+        </section>
     </main>
     <footer>
+        <a href="#" id="back-to-top">
+            <span class="material-symbols-outlined">
+                arrow_circle_up </span>
+            </a>
         <p>Ayman Portfolio &copy; 2025</p>
     </footer>
+
+    <script src="js/app.js"></script>
 </body>
 
 </html>
