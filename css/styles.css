@@ -21,7 +21,7 @@
   --icon-size: 24px;
 }
 
-[data-theme="dark"] {
+:root:has(#theme-toggle:checked) {
   /* Dark Theme */
   --box-shadow: 0 0px 20px rgba(0, 0, 0, 0.5);
   --header-box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
@@ -130,12 +130,12 @@ body {
 
 /* Hide/show logic */
 .slider .moon-icon,
-[data-theme="dark"] .slider .sun-icon {
+:root:has(#theme-toggle:checked) .slider .sun-icon {
   opacity: 1;
 }
 
 .slider .sun-icon,
-[data-theme="dark"] .slider .moon-icon {
+:root:has(#theme-toggle:checked) .slider .moon-icon {
   opacity: 0;
 }
 
@@ -319,8 +319,6 @@ header > .nav > .nav-list {
 
 /* Active state when toggled */
 .nav-list.show-nav {
-  /* display: block !important;
-  height: fit-content; */
   visibility: visible !important;
   opacity: 1 !important;
 }
