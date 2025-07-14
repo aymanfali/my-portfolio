@@ -480,21 +480,50 @@ section.portfolio ul {
 }
 
 section.portfolio ul li {
+  position: relative;
   list-style: none;
   padding: 10px;
   margin: 10px;
 }
 
+section.portfolio ul li .github-link img{
+  display: none;
+  height: var(--icon-size);
+  width: auto;
+  filter: var(--icon-accent);
+}
+section.portfolio ul li .github-link{
+  opacity: 0;
+  visibility: hidden;
+  position:absolute;
+  left: -40px;
+  bottom: 60px;
+  padding: 12px 15px;
+  background-color: var(--forth-color);
+  border: 1px solid var(--third-color);
+  border-radius: 50%;
+}
+section.portfolio ul li:hover .github-link{
+  opacity: 1;
+  visibility: visible;
+  left: 30px;
+  border: 1px solid var(--primary-color);
+  box-shadow: var(--box-shadow);
+}
+section.portfolio ul li:hover .github-link img{
+  display: block;
+}
+
 section.portfolio img {
   display: inline-block;
   width: 100%;
-  height: 150px;
+  height: 200px;
   box-shadow: var(--box-shadow);
   border-radius: 15px;
   object-fit: cover;
 }
-section.portfolio img:hover {
-  transform: scale(1.2);
+section.portfolio ul li:hover {
+  transform: scale(1.1);
 }
 
 figcaption {
@@ -600,9 +629,6 @@ figcaption {
   height: var(--icon-size);
   filter: var(--icon-accent);
   margin: 0 5px;
-}
-.contact .contact-details{
-  
 }
 
 .field {
