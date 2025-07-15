@@ -10,8 +10,8 @@
   --secondary-color: rgb(0, 0, 0);
   --third-color: rgb(228, 226, 226);
   --forth-color: rgb(255, 255, 255);
-  --success-color: rgb(238, 255, 238);
-  --danger-color: rgb(255, 240, 240);
+  --success-color: rgb(64, 212, 64);
+  --danger-color: rgb(226, 51, 51);
   --overlay-background: rgba(0, 0, 0, 0.8);
   --text-color: #333;
   --background-color: #fff;
@@ -31,8 +31,8 @@
   --secondary-color: rgb(255, 255, 255);
   --third-color: rgb(50, 50, 50);
   --forth-color: rgb(30, 30, 30);
-  --success-color: rgb(118, 173, 118);
-  --danger-color: rgb(36, 14, 14);
+  --success-color: rgb(64, 212, 64);
+  --danger-color: rgb(226, 51, 51);
   --overlay-background: rgba(0, 0, 0, 0.9);
   --text-color: #f0f0f0;
   --background-color: #121212;
@@ -484,31 +484,28 @@ section.portfolio ul li {
   margin: 10px;
 }
 
-section.portfolio ul li .github-link img{
-  display: none;
+section.portfolio ul li .github-link img {
   height: var(--icon-size);
   width: auto;
   filter: var(--icon-accent);
 }
-section.portfolio ul li .github-link{
-  opacity: 0;
-  visibility: hidden;
-  position:absolute;
-  left: -40px;
+section.portfolio ul li .github-link {
+  position: absolute;
+  left: 30px;
   bottom: 60px;
   padding: 12px 15px;
   background-color: var(--forth-color);
   border: 1px solid var(--third-color);
   border-radius: 50%;
 }
-section.portfolio ul li:hover .github-link{
+section.portfolio ul li:hover .github-link {
   opacity: 1;
   visibility: visible;
   left: 30px;
   border: 1px solid var(--primary-color);
   box-shadow: var(--box-shadow);
 }
-section.portfolio ul li:hover .github-link img{
+section.portfolio ul li:hover .github-link img {
   display: block;
 }
 
@@ -523,6 +520,7 @@ section.portfolio img {
 section.portfolio ul li:hover {
   transform: scale(1.1);
 }
+
 
 figcaption {
   text-decoration: none;
@@ -607,22 +605,22 @@ figcaption {
   margin: 5px;
 }
 
-.contact .contact-details ul li:hover{
+.contact .contact-details ul li:hover {
   border: 1px solid var(--primary-color);
   transform: scale(1.2);
 }
-.contact .contact-details ul li{
+.contact .contact-details ul li {
   list-style: none;
   margin: 5px;
   padding: 10px;
   border-radius: 15px;
 }
-.contact .contact-details ul li a{
+.contact .contact-details ul li a {
   text-decoration: none;
   color: var(--text-color);
 }
 
-.contact .contact-details img{
+.contact .contact-details img {
   width: var(--icon-size);
   height: var(--icon-size);
   filter: var(--icon-accent);
@@ -654,13 +652,13 @@ figcaption {
 
 textarea {
   resize: none;
+  background-color: var(--background-color);
+  color: var(--text-color);
 }
 
-input:valid {
-  background-color: var(--success-color);
-}
-input:invalid {
-  background-color: var(--danger-color);
+input {
+  background-color: var(--background-color);
+  color: var(--text-color);
 }
 
 .submit {
@@ -678,6 +676,21 @@ input:invalid {
   background-color: var(--forth-color);
   color: var(--primary-color);
   outline: 1px solid var(--primary-color);
+}
+
+.submit:disabled {
+  cursor: not-allowed;
+  background-color: var(--third-color);
+  color: var(--text-color);
+}
+
+[class$="-error"] {
+  display: none;
+  padding: 5px 10px 5px 10px;
+  text-align: start;
+  margin: 0 0 10px 10px;
+  color: var(--danger-color);
+  font-size: small;
 }
 
 footer {
@@ -751,6 +764,10 @@ footer {
     grid-template-columns: 1fr 1fr;
   }
 
+  section.portfolio ul li .github-link img {
+    display: block;
+  }
+
   .testimonials li {
     min-width: 300px;
   }
@@ -787,6 +804,16 @@ footer {
   .hero .call-to-action h2,
   .hero .call-to-action p {
     text-align: start;
+  }
+
+  section.portfolio ul li .github-link {
+    opacity: 0;
+    visibility: hidden;
+    left: -40px;
+  }
+
+  section.portfolio ul li .github-link img {
+    display: none;
   }
 }
 
