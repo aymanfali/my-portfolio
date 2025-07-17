@@ -24,10 +24,10 @@ document.addEventListener("DOMContentLoaded", function () {
   let messageError = "";
 
   mainNavToggle.addEventListener("click", () => {
-    if (this.classList.contains("active-menu")) {
-      this.classList.remove("active-menu");
+    if (mainNavToggle.classList.contains("active-menu")) {
+      mainNavToggle.classList.remove("active-menu");
     } else {
-      this.classList.add("active-menu");
+      mainNavToggle.classList.add("active-menu");
     }
   });
 
