@@ -92,6 +92,37 @@ body {
   filter: var(--icon-accent);
 }
 
+.loader{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border: 1px solid var(--primary-color);
+  padding: 20px 50px;
+  display: none;
+}
+
+.github-followers-count{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  border: 1px solid var(--third-color);
+  margin: 20px auto;
+  width: fit-content;
+  padding: 10px;
+  border-radius: 15px;
+}
+
+.github-followers{
+  margin-right: 10px;
+}
+
+.github-followers-count img{
+  width: var(--icon-size);
+  height: var(--icon-size);
+  margin-right: 10px;
+}
+
 /* Theme Toggle Switch */
 .theme-switch {
   position: relative;

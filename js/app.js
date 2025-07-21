@@ -141,4 +141,30 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
   updateSubmitButton();
+
+  const username = document.querySelector(".username");
+  const myLogo = document.querySelector(".my-logo");
+  const githubFollowersCount = document.querySelector(".github-followers");
+  const loader = document.querySelector(".loader");
+
+  loader.style.display = "block";
+  overlay.classList.add("show-overlay");
+
+  fetch(`https://api.github.com/users/aymanfali`)
+    .then((res) => {
+      if (!res.ok) throw new Error("User not found!");
+      return res.json();
+    })
+    .then((data) => {
+      username.textContent = data.name;
+      myLogo.src = data.avatar_url;
+      githubFollowersCount.textContent = `${data.followers} followers`;
+    })
+    .catch((err) => {
+      username.textContent = "* Ayman Fahd Naji Ali *";
+    })
+    .finally(() => {
+      loader.style.display = "none";
+      overlay.classList.remove("show-overlay");
+    });
 });
