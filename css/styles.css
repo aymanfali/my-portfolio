@@ -106,9 +106,11 @@ body {
   position: relative;
   display: flex;
   justify-content: center;
+  align-items: center;
   border: 1px solid var(--third-color);
   margin: 20px auto;
   width: fit-content;
+  height: 50px;
   padding: 10px;
   border-radius: 15px;
 }
