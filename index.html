@@ -4,230 +4,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Comic+Relief:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-
-    <script defer src="js/app.js"></script>
-
-    <title>Ayman - Portfolio</title>
+    <meta name="description" content="Ayman F. Ali Portfolio">
+    
+    <!-- Favicon links -->
+    <link rel="icon" href="public/favicon.ico" sizes="any">
+    <link rel="icon" href="public/favicon.ico" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="public/favicon.ico">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="src/assets/css/output.css">
+    
+    <title>Ayman Portfolio</title>
 </head>
 
 <body>
     <header>
-        <div class="logo">
-            <img src="./images/ayman-logo.jpg" alt="ayman">
-        </div>
-
-        <nav class="nav">
-            <ul class="nav-list">
-                <li><a href="#bio">Bio</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
-                <li><a href="#certs">Certificates</a></li>
-                <li><a href="#testimonials">Testimonials</a></li>
-                <li><a href="#contact-us">Contact</a></li>
-            </ul>
+        <nav>
+            
         </nav>
-
-        <!-- <div class="white-space"></div> -->
-        <div class="right">
-            <label class="theme-switch">
-                <input type="checkbox" id="theme-toggle">
-                <span class="slider">
-                    <img class="icon sun-icon" src="images/sun-solid.svg" alt="light_mode">
-                    <img class="icon moon-icon" src="images/moon-solid.svg" alt="dark_mode">
-                </span>
-            </label>
-
-            <div class="nav-toggle">
-                <div class="nav-trigger">
-                    <a class="main-nav-toggle" href="#main-nav"><i>Menu</i></a>
-                </div>
-            </div>
-        </div>
-
     </header>
+    
     <main>
-        <span class="overlay"></span>
-        <div class="loader"> loading ...</div>
-        <section class="hero" id="bio">
-            <img class="my-logo" src="" alt="ayman">
-            <div class="call-to-action">
-                <h2 class="username"></h2>
-                <section class="bio">
-                    <p>I am a software engineer. pationate about building modern web applications using modern
-                        technologies.
-                        I can
-                        help with problem solving.</p>
-                </section>
-                <div class="github-followers-count">
-                    <img src="images/github-brands.svg" alt="github">
-                    <p class="github-followers"></p>
-                    <a href="https://github.com/login?return_to=https%3A%2F%2Fgithub.com%2Faymanfali"> Follow Me </a>
-                </div>
-
-                <a class="download" href="assets/AYMAN_F_ALI_CV_Software_Engineer.pdf">
-                    <span class="material-symbols-outlined">
-                        download </span>
-                    <span>Download My CV</span>
-                </a>
-            </div>
-        </section>
-        <hr>
-        <section class="skills" id="skills">
-            <h2>Skills</h2>
-            <ul>
-                <li>Laravel</li>
-                <li>React.js</li>
-                <li>Tailwind</li>
-                <li>Git</li>
-                <li>Problem Solving</li>
-                <li>PHP</li>
-                <li>JavaScript</li>
-            </ul>
-        </section>
-        <hr>
-        <section class="portfolio" id="portfolio">
-            <h2>Projects</h2>
-            <ul>
-                <li>
-                    <a target="_blank" href="images/portfolio.jpg">
-                        <figure>
-                            <img src="images/portfolio.jpg" alt="portfolio">
-                            <figcaption>
-                                Ayman's WebApp
-                            </figcaption>
-                        </figure>
-                    </a>
-                    <a href="https://github.com/aymanfali/ayman" class="github-link">
-                        <img src="images/github-brands.svg" alt="github-link">
-                    </a>
-                </li>
-                <li>
-                    <a target="_blank" href="images/my-portfolio.png">
-                        <figure>
-                            <img src="images/my-portfolio.png" alt="portfolio">
-                            <figcaption>
-                                My Portfolio
-                            </figcaption>
-                        </figure>
-                    </a>
-                    <a href="https://github.com/aymanfali/my-portfolio" class="github-link">
-                        <img src="images/github-brands.svg" alt="github-link">
-                    </a>
-                </li>
-                <li>
-                    <a target="_blank" href="images/registration-form.png">
-                        <figure>
-                            <img src="images/registration-form.png" alt="portfolio">
-                            <figcaption>
-                                Registrsation Form
-                            </figcaption>
-                        </figure>
-                    </a>
-                    <a href="https://github.com/aymanfali/registration-form" class="github-link">
-                        <img src="images/github-brands.svg" alt="github-link">
-                    </a>
-                </li>
-            </ul>
-        </section>
-        <hr>
-        <section class="certificates" id="certs">
-            <h2>My Certificates</h2>
-            <ul>
-                <li><a href="https://learn.re-coded.com/certificates/hukweijgzk">Intro to Frontend Web Development</a>
-                </li>
-            </ul>
-        </section>
-        <hr>
-        <section class="testimonials" id="testimonials">
-            <h2>Testimonials</h2>
-            <ul class="items">
-                <li>
-                    <blockquote>
-                        Thank you for your help, the projects I make become better and better after your advice.
-                    </blockquote>
-                </li>
-                <li>
-                    <blockquote>
-                        Don't Give Up, Every simple step leads to big target.
-                    </blockquote>
-                </li>
-                <li>
-                    <blockquote>
-                        learning by doing is the best thing I get from this bootcamp.
-                    </blockquote>
-                </li>
-                <li>
-                    <blockquote>
-                        Software Engineering tought me how to organize my life.
-                    </blockquote>
-                </li>
-            </ul>
-        </section>
-        <hr>
-        <section class="contact" id="contact-us">
-            <h2>Contact Us</h2>
-            <div class="contact-details">
-                <ul>
-                    <li>
-                        <a href="https://www.linkedin.com/in/ayman-f-ali/"><img src="images/linkedin-brands.svg"
-                                alt="linked-in">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://github.com/aymanfali"><img src="images/github-brands.svg" alt="github">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="mailto:ayman4swd@gmail.com"><img src="images/envelope-solid.svg" alt="gmail">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://wa.me/+967738718923"><img src="images/whatsapp-brands.svg" alt="whatsapp">
-                        </a>
-                    </li>
-                </ul>
-            </div>
-            <form class="form" action="" method="post">
-                <div class="field">
-                    <img class="icon" src="images/user-solid.svg" alt="name">
-                    <input class="input" type="text" name="name" id="name" placeholder="Your Name" required>
-                </div>
-                <p class="name-error">invalid name</p>
-                <div class="field">
-                    <img class="icon" src="images/envelope-solid.svg " alt="email">
-                    <input class="input" type="email" name="email" id="email" placeholder="Your email" required>
-                </div>
-                <p class="email-error"></p>
-                <div class="field">
-                    <img class="icon" src="images/comment-regular.svg " alt="subject">
-                    <input class="input" type="text" name="subject" id="subject" placeholder="Your subject" required>
-                </div>
-                <p class="subject-error"></p>
-                <div class="field">
-                    <img class="icon" src="images/message-solid.svg " alt="message">
-                    <textarea rows="5" class="input" name="message" id="message" placeholder="Your message"
-                        required></textarea>
-                </div>
-                <p class="message-error"></p>
-                <button type="submit" class="submit">Send</button>
-            </form>
-        </section>
     </main>
+    
     <footer>
-        <a href="#" id="back-to-top">
-            <span class="material-symbols-outlined">
-                arrow_circle_up </span>
-        </a>
-        <p>Ayman Portfolio &copy; 2025</p>
     </footer>
 
+    <!-- JavaScript -->
+    <script src="src/assets/js/app.js"></script>
 </body>
 
 </html>

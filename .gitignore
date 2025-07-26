@@ -1,0 +1,6 @@
+# untracked files / dir
+
+/node_modules
+.vscode
+*.old
+*.old.*
