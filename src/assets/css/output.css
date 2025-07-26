@@ -388,6 +388,9 @@
   .flex-col {
     flex-direction: column;
   }
+  .flex-wrap {
+    flex-wrap: wrap;
+  }
   .items-center {
     align-items: center;
   }
@@ -447,6 +450,9 @@
   .border-t-\[1px\] {
     border-top-style: var(--tw-border-style);
     border-top-width: 1px;
+  }
+  .border-blue-300 {
+    border-color: var(--color-blue-300);
   }
   .border-blue-600 {
     border-color: var(--color-blue-600);
