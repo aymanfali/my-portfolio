@@ -5,28 +5,85 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Ayman F. Ali Portfolio">
-    
+
     <!-- Favicon links -->
     <link rel="icon" href="public/favicon.ico" sizes="any">
     <link rel="icon" href="public/favicon.ico" type="image/svg+xml">
     <link rel="apple-touch-icon" href="public/favicon.ico">
-    
+
     <!-- CSS -->
     <link rel="stylesheet" href="src/assets/css/output.css">
-    
+
     <title>Ayman Portfolio</title>
 </head>
 
-<body>
-    <header>
+<body class="lg:max-w-7xl lg:m-auto">
+    <header class="flex items-center justify-between bg-blue-600 p-3 text-white lg:relative lg:h-20">
+        <div class="logo">
+            <img class="w-10 h-10 rounded-full m-2" src="public/images/ayman-logo.jpg" alt="">
+        </div>
         <nav>
-            
+            <ul
+                class="flex text-blue-600 absolute bottom-0 left-0 right-0 gap-3 w-full p-3 justify-evenly border-t-[1px] text-xs lg:relative lg:text-white lg:border-t-0">
+                <li
+                    class="order-3 lg:order-first hover:bg-blue-200 lg:hover:border-b-2 lg:hover:bg-blue-600 rounded lg:rounded-xs p-2">
+                    <a href="" class="lg:flex gap-2 items-center">
+                        <svg class="w-6 h-6 fill-blue-600 lg:fill-white m-auto" xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 512 512"><!--!Font Awesome Free v7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                            <path
+                                d="M277.8 8.6c-12.3-11.4-31.3-11.4-43.5 0l-224 208c-9.6 9-12.8 22.9-8 35.1S18.8 272 32 272l16 0 0 176c0 35.3 28.7 64 64 64l288 0c35.3 0 64-28.7 64-64l0-176 16 0c13.2 0 25-8.1 29.8-20.3s1.6-26.2-8-35.1l-224-208zM240 320l32 0c26.5 0 48 21.5 48 48l0 96-128 0 0-96c0-26.5 21.5-48 48-48z" />
+                        </svg>
+                        <span>Home</span>
+                    </a>
+                </li>
+                <li class="order-last lg:order-2 p-2 hover:bg-blue-200 lg:hover:border-b-2 lg:hover:bg-blue-600 rounded lg:rounded-xs">
+                    <a href="" class="lg:flex gap-2 items-center ">
+                        <svg class="w-6 h-6 fill-blue-600 lg:fill-white m-auto" xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 640 640"><!--!Font Awesome Free v7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                            <path
+                                d="M320 576C461.4 576 576 461.4 576 320C576 178.6 461.4 64 320 64C178.6 64 64 178.6 64 320C64 461.4 178.6 576 320 576zM288 224C288 206.3 302.3 192 320 192C337.7 192 352 206.3 352 224C352 241.7 337.7 256 320 256C302.3 256 288 241.7 288 224zM280 288L328 288C341.3 288 352 298.7 352 312L352 400L360 400C373.3 400 384 410.7 384 424C384 437.3 373.3 448 360 448L280 448C266.7 448 256 437.3 256 424C256 410.7 266.7 400 280 400L304 400L304 336L280 336C266.7 336 256 325.3 256 312C256 298.7 266.7 288 280 288z" />
+                        </svg>
+                        <span>About</span>
+                    </a>
+                </li>
+                <li class="order-first lg:order-3 p-2 hover:bg-blue-200 lg:hover:border-b-2 lg:hover:bg-blue-600 rounded lg:rounded-xs">
+                    <a href="" class="lg:flex gap-2 items-center ">
+                        <svg class="w-6 h-6 fill-blue-600 lg:fill-white m-auto" xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 640 640"><!--!Font Awesome Free v7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                            <path
+                                d="M197.8 100.3C208.7 107.9 211.3 122.9 203.7 133.7L147.7 213.7C143.6 219.5 137.2 223.2 130.1 223.8C123 224.4 116 222 111 217L71 177C61.7 167.6 61.7 152.4 71 143C80.3 133.6 95.6 133.7 105 143L124.8 162.8L164.4 106.2C172 95.3 187 92.7 197.8 100.3zM197.8 260.3C208.7 267.9 211.3 282.9 203.7 293.7L147.7 373.7C143.6 379.5 137.2 383.2 130.1 383.8C123 384.4 116 382 111 377L71 337C61.6 327.6 61.6 312.4 71 303.1C80.4 293.8 95.6 293.7 104.9 303.1L124.7 322.9L164.3 266.3C171.9 255.4 186.9 252.8 197.7 260.4zM288 160C288 142.3 302.3 128 320 128L544 128C561.7 128 576 142.3 576 160C576 177.7 561.7 192 544 192L320 192C302.3 192 288 177.7 288 160zM288 320C288 302.3 302.3 288 320 288L544 288C561.7 288 576 302.3 576 320C576 337.7 561.7 352 544 352L320 352C302.3 352 288 337.7 288 320zM224 480C224 462.3 238.3 448 256 448L544 448C561.7 448 576 462.3 576 480C576 497.7 561.7 512 544 512L256 512C238.3 512 224 497.7 224 480zM128 440C150.1 440 168 457.9 168 480C168 502.1 150.1 520 128 520C105.9 520 88 502.1 88 480C88 457.9 105.9 440 128 440z" />
+                        </svg>
+                        <span>Skills</span>
+                    </a>
+                </li>
+                <li class="order-2 lg:order-4 p-2 hover:bg-blue-200 lg:hover:border-b-2 lg:hover:bg-blue-600 rounded lg:rounded-xs">
+                    <a href="" class="lg:flex gap-2 items-center">
+                        <svg class="w-6 h-6 fill-blue-600 lg:fill-white m-auto" xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 640 640"><!--!Font Awesome Free v7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                            <path
+                                d="M434.8 54.1C446.7 62.7 451.1 78.3 445.7 91.9L367.3 288L512 288C525.5 288 537.5 296.4 542.1 309.1C546.7 321.8 542.8 336 532.5 344.6L244.5 584.6C233.2 594 217.1 594.5 205.2 585.9C193.3 577.3 188.9 561.7 194.3 548.1L272.7 352L128 352C114.5 352 102.5 343.6 97.9 330.9C93.3 318.2 97.2 304 107.5 295.4L395.5 55.4C406.8 46 422.9 45.5 434.8 54.1z" />
+                        </svg>
+                        <span>Projects</span>
+                    </a>
+                </li>
+                <li class="order-4 lg:order-last p-2 hover:bg-blue-200 lg:hover:border-b-2 lg:hover:bg-blue-600 rounded lg:rounded-xs">
+                    <a href="" class="lg:flex gap-2 items-center ">
+                        <svg class="w-6 h-6 fill-blue-600 lg:fill-white m-auto" xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 512 512"><!--!Font Awesome Free v7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                            <path
+                                d="M160.2 25C152.3 6.1 131.7-3.9 112.1 1.4l-5.5 1.5c-64.6 17.6-119.8 80.2-103.7 156.4 37.1 175 174.8 312.7 349.8 349.8 76.3 16.2 138.8-39.1 156.4-103.7l1.5-5.5c5.4-19.7-4.7-40.3-23.5-48.1l-97.3-40.5c-16.5-6.9-35.6-2.1-47 11.8l-38.6 47.2C233.9 335.4 177.3 277 144.8 205.3L189 169.3c13.9-11.3 18.6-30.4 11.8-47L160.2 25z" />
+                        </svg>
+                        <span>Contact</span>
+                    </a>
+                </li>
+            </ul>
         </nav>
+        <div class="controls"></div>
     </header>
-    
+
     <main>
     </main>
-    
+
     <footer>
     </footer>
 
