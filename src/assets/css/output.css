@@ -275,6 +275,12 @@
   .mr-3 {
     margin-right: calc(var(--spacing) * 3);
   }
+  .mb-10 {
+    margin-bottom: calc(var(--spacing) * 10);
+  }
+  .mb-40 {
+    margin-bottom: calc(var(--spacing) * 40);
+  }
   .block {
     display: block;
   }
